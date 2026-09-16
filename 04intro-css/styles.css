@@ -1,0 +1,84 @@
+body {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+/* header stuff goes here*/
+header {
+    background-color: #ffac0f;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+/*Navigation stuff goes here*/
+nav{
+    background-color: white;
+    color: #9D2eFf;
+}
+nav ul {
+
+        display: flex;
+        list-style-type: none;
+}
+nav a {
+    color: #ffac0f;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px;
+}
+nav a:hover {
+    color: #9D2eFf;
+    text-decoration: underline;
+}
+
+
+/*main page stuff goes here.*/
+h1 {
+    color: #ffac0f;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: #9D2eFf;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+p, address {
+    background-color: #e6e5e5;
+    color: #806c47;
+    font-weight: 300;
+    font-size: 1rem;
+
+}
+ol {
+    color: #FF110a;
+    margin-left:2rem;
+    padding: 1px;
+}
+dd ul {
+        list-style-type: circle;
+}
+dt {
+    color: #9D2eFf
+}
+dl {
+    color: #806c47;
+
+}
+
+/*Footer infor goes here*/
+
+footer { 
+    border: 1px solid #9D2eFf;
+}
+footer p {
+     margin: 0;
+    }
+footer address {
+    margin: 0;
+    padding: 0;
+}
