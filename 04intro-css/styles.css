@@ -23,6 +23,7 @@ nav ul {
         list-style-type: none;
 }
 nav a {
+    border-bottom: 1px solid #e6e5e5;
     color: #ffac0f;
     text-decoration: none;
     font-weight: 700;
@@ -32,10 +33,18 @@ nav a:hover {
     color: #9D2eFf;
     text-decoration: underline;
 }
+nav li.active a {
+    background-color: #9D2eFf;
+    color: #ffac0f;
+}
 
 
 /*main page stuff goes here.*/
+div {
+    background-color: #e6e5e5;
+}
 h1 {
+    
     color: #ffac0f;
     font-weight: 700;
     font-size: 2.5rem;
