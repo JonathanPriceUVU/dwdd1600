@@ -1,0 +1,260 @@
+
+/*Prevent problems with default browser*/
+* {box-sizing: border-box;}
+
+
+body {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+/* header stuff goes here*/
+header {
+    background-color: #ffac0f;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+
+/*screen size stuff goes here*/
+/* Small Screen nav stuff here */
+@media screen and (max-width: 600px) {
+     nav ul {
+        margin: 0;
+        padding: 0 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        padding: .8rem;
+        color: #9D2eFf;
+        text-decoration: none;
+        border-bottom: solid 1px #eee;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    nav .active a {
+        background-color: #ffac0f;
+        color:white;
+        background-image: linear-gradient(to bottom, #ffac0f, #9D2eFf);
+    }
+
+} /*End small screens*/
+
+
+/* Large Screen nav stuff here */
+@media screen and (min-width: 601px) {
+
+    nav {
+    border-top: solid 1px #E0E6E6;
+    
+}
+nav ul {
+    margin: 0;
+    padding: 0 2vw;
+    list-style-type: none;
+    display: flex;
+}
+nav a {
+    display: block;
+    padding: 1.2rem 1rem .3rem 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #9D2eFf;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: solid 2px #fff;
+}
+
+nav .active a {
+    background-image: linear-gradient(to bottom, #ffac0f, #9D2eFf);
+}
+nav a:hover {
+    color: #000;
+}
+} /*End large screens*/
+
+
+/*Main stuff goes here, question mark*/
+main figure.logo {
+    float: right;
+    width: 100%;
+
+}
+main figure.logo img {
+    width: 100%;
+    height: auto;
+}
+main figure figcaption {
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+/*Navigation stuff goes here*/
+nav{
+    background-color: white;
+    color: #9D2eFf;
+}
+nav ul {
+
+        display: flex;
+        list-style-type: none;
+}
+nav a {
+    border-bottom: 1px solid #e6e5e5;
+    color: #ffac0f;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px;
+}
+nav a:hover {
+    color: #9D2eFf;
+    text-decoration: underline;
+}
+li.active a {
+    background-color: #9D2eFf;
+    color: #ffac0f;
+}
+
+
+/*main page stuff goes here.*/
+div {
+    background-color: #e6e5e5;
+}
+h1 {
+    
+    color: #ffac0f;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: #9D2eFf;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+p, address {
+    background-color: #e6e5e5;
+    color: #806c47;
+    font-weight: 300;
+    font-size: 1rem;
+
+}
+ol {
+    color: #FF110a;
+    margin-left:2rem;
+    padding: 1px;
+}
+dd ul {
+        list-style-type: circle;
+}
+dt {
+    color: #9D2eFf
+}
+dl {
+    color: #806c47;
+}
+
+div.Playable_classes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+}
+div.Playable_classes figcaption{
+    text-align: center;
+    color: #806c47;
+}
+
+.Playable_classes img:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+}
+
+
+
+/*Form stuff here*/
+.thankyou fieldset {
+    border: 1px solid #e6e5e5;
+    border-radius: 4px;
+}
+.thankyou legend {
+    color: #ffac0f;
+    font-size: .8rem;
+}
+
+.thankyou label, .thankyou select, .thankyou input[type="text"], .thankyou input[type="email"], .thankyou input[type="tel"]{
+    display: block;
+    margin: 0 0 40px 0;
+}
+
+.thankyou [type="text"], .thankyou [type="email"], .thankyou [type="tel"], .thankyou select, .thankyou textarea {
+   border: solid 1px #e6e5e5;
+   padding: .3rem;
+   width: 250px;
+   border-radius: .3rem;
+   font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 200;
+}
+.thankyou textarea {
+    height: 6rem;
+}
+.thankyou :required {
+    background-color: rgba(156,51,53,0.1);}
+
+.buttons label{
+    display: flex;
+    align-items: center;
+}
+
+.buttons span {
+    width: 100px;
+}
+.thankyou input {
+    display: block;
+    padding: 8px;
+    font-size: 1.5rem;
+    width: 300px;
+}
+.buttons input {
+    width: 30px;
+}
+.thankyou [type=submit] {
+    background-color: #9D2eFf;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+
+
+/*Footer infor goes here*/
+
+footer { 
+    border: 1px solid #9D2eFf;
+    clear: both;
+}
+footer p {
+     margin: 0;
+    }
+footer address {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Max page size and centering*/
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
